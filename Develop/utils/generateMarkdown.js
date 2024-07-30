@@ -4,8 +4,8 @@ function renderLicenseBadge(license) {
   if (!license) {
     return '';
   }
+  const formattedLicense = license.replace(/\s+/g, '-').toLowerCase();
   return `![License](https://img.shields.io/badge/license-${formattedLicense}-blue.svg)`;
-  
 }
 
 // TODO: Create a function that returns the license link
@@ -36,14 +36,15 @@ function generateMarkdown(data) {
 # ${data.title}
 
 ## Description
-${data.descrption}
+${data.description}
 
 ## Table of Contents
+- [Description](#description)
 - [Installation](#installation)
 - [Usage](#installation)
-${renderLicenseLink(data.license)}
 - [Tests](#installation)
 - [Questions](#questions)
+${renderLicenseLink(data.license)}
 
 ## Installation
 ${data.installation}
