@@ -7,7 +7,6 @@ import generateMarkdown from './utils/generateMarkdown.js';
 
 
 // TODO: Create an array of questions for user input
-// 
 const questions = [
     {
         type: 'input',

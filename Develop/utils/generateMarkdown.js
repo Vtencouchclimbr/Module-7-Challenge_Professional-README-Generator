@@ -58,7 +58,7 @@ ${renderLicenseSection(data.license)}
 ${data.tests}
 
 ## Questions
-If you ahve any questions, please reach out to me:
+If you have any questions, please reach out to me:
 - Github [${data.github}](http://github.com/${data.github})
 - Email: ${data.email}
   `;
