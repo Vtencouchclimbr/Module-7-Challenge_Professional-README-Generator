@@ -21,13 +21,14 @@ To use the Static Site Generator, ensure you have Node.js installed on your mach
 ## Usage
 I built the Professional README Generator to simplify and accelerate the process of creating README.md files for projects. By automating the generation of essential documentation, this tool helps developers maintain consistent and comprehensive project information without the manual effort. It streamlines the setup of project documentation, allowing developers to focus more on coding and less on writing repetitive documentation.
 
-
+## Video
+[Watch the video](https://drive.google.com/file/d/1c5qeGudq99Ku5HeX71d4PY1P5s307yPi/view)
 
 ## Tests
 No tests are provided at this time.
 
 ## Questions
-If you ahve any questions, please reach out to me:
+If you have any questions, please reach out to me:
 - Github [Vtencouchclimbr](http://github.com/Vtencouchclimbr)
 - Email: LmntryLmnt@gmail.com
   
