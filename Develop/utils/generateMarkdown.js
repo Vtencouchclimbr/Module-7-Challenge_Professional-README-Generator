@@ -1,36 +1,36 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// Function to return a license badge based on which license is passed in
 function renderLicenseBadge(license) {
-  if (!license) {
+  if (!license || license === 'None') {
     return '';
   }
-  const formattedLicense = license.replace(/\s+/g, '-').toLowerCase();
-  return `![License](https://img.shields.io/badge/license-${formattedLicense}-blue.svg)`;
+  const formattedLicense = license.replace(/\s+/g, '-').toLowerCase(); // Ensure formatting is correct
+  const badgeUrl = `https://img.shields.io/badge/license-${formattedLicense}-blue.svg`;
+  
+  console.log('License Badge URL:', badgeUrl); // For debugging to ensure correct URL is generated
+  
+  return `![License](${badgeUrl})`; // Return the badge markdown
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// Function to return the license link
 function renderLicenseLink(license) {
-  if (!license) {
+  if (!license || license === 'None') {
     return '';
   }
   return '[License](#license)';
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// Function to return the license section of README
 function renderLicenseSection(license) {
-  if (!license) {
+  if (!license || license === 'None') {
     return '';
-    }
-    return '## License This project is licensed under the ${license} license.';
-  
+  }
+  return `## License
+This project is licensed under the ${license} license.`;
 }
 
-// TODO: Create a function to generate markdown for README
+// Function to generate markdown for README
 function generateMarkdown(data) {
   return `
-
   ${renderLicenseBadge(data.license)}
   
 # ${data.title}
@@ -41,10 +41,12 @@ ${data.description}
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
-- [Usage](#installation)
-- [Tests](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- ${renderLicenseLink(data.license)}
+- [Video](#video)
+- [Tests](#tests)
 - [Questions](#questions)
-${renderLicenseLink(data.license)}
 
 ## Installation
 ${data.installation}
@@ -52,14 +54,20 @@ ${data.installation}
 ## Usage
 ${data.usage}
 
+## Contributing
+${data.contributors}
+
 ${renderLicenseSection(data.license)}
+
+## Video
+${data.video}
 
 ## Tests
 ${data.tests}
 
 ## Questions
 If you have any questions, please reach out to me:
-- Github [${data.github}](http://github.com/${data.github})
+- Github: [${data.github}](https://github.com/${data.github})
 - Email: ${data.email}
   `;
 }

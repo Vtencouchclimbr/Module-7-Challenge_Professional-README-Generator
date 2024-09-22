@@ -1,6 +1,5 @@
 
-
-  
+  ![License](https://img.shields.io/badge/license-mit-blue.svg)
   
 # Professional README Generator
 
@@ -10,10 +9,11 @@ The Professional README Generator is a Node.js application designed to streamlin
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
-- [Usage](#installation)
-- [Tests](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Tests](#tests)
 - [Questions](#questions)
-
 
 ## Installation
 To use the Static Site Generator, ensure you have Node.js installed on your machine. Then, follow these steps: 1. Navigate to the git repository and clone to your local machine. 2. After opening files in code editor, run "npm install" in your terminal to install the relevant packages. 3. Run the program in your terminal using "npm start".
@@ -21,14 +21,20 @@ To use the Static Site Generator, ensure you have Node.js installed on your mach
 ## Usage
 I built the Professional README Generator to simplify and accelerate the process of creating README.md files for projects. By automating the generation of essential documentation, this tool helps developers maintain consistent and comprehensive project information without the manual effort. It streamlines the setup of project documentation, allowing developers to focus more on coding and less on writing repetitive documentation.
 
+## Contributing
+undefined
+
 ## Video
 [Watch the video](https://drive.google.com/file/d/1c5qeGudq99Ku5HeX71d4PY1P5s307yPi/view)
+
+## License
+This project is licensed under the MIT license.
 
 ## Tests
 No tests are provided at this time.
 
 ## Questions
 If you have any questions, please reach out to me:
-- Github [Vtencouchclimbr](http://github.com/Vtencouchclimbr)
-- Email: LmntryLmnt@gmail.com
+- Github: [Vtencouchclimbr](http://github.com/Vtencouchclimbr)
+- Email: lmntrylmnt@gmail.com
   
